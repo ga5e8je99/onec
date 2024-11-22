@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - OneClicPick</title>
+    <style>
+        :root {
+
+
+
+            --spanish-gray: hsl(0, 0%, 60%);
+            --sonic-silver: hsl(0, 0%, 47%);
+            --eerie-black: hsl(0, 0%, 13%);
+            --salmon-pink: hsl(202, 86%, 75%);
+            --sandy-brown: hsl(29, 90%, 65%);
+            --bittersweet: hsl(202, 86%, 75%);
+            --ocean-green:hsl(202, 29%, 50%) ;
+            --davys-gray: hsl(0, 0%, 33%);
+            --cultured: hsl(0, 0%, 93%);
+            --white: hsl(0, 100%, 100%);
+            --onyx: hsl(0, 0%, 27%);
+          
+        }    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cultured);
+            color: var(--eerie-black);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: var(--ocean-green);
+            padding: 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        .payment-container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--white);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .payment-container h2 {
+            color: var(--onyx);
+        }
+        .payment-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid var(--davys-gray);
+            border-radius: 5px;
+        }
+        .payment-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--bittersweet);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .payment-form button:hover {
+            background-color: var(--salmon-pink);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>OneClicPick - Payment</h1>
+    </div>
+
+    <div class="payment-container">
+        <h2>Payment Details</h2>
+        <form class="payment-form">
+            <input type="text" id="card-number" placeholder="Card Number" required>
+            <input type="text" id="name-on-card" placeholder="Name on Card" required>
+            <input type="date" id="expiry-date" placeholder="Expiry Date" required>
+            <input type="text" id="cvv" placeholder="CVV" required>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script>
+        // You can add JavaScript functions here, such as input validation or payment processing
+        document.querySelector('.payment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Payment Successful!');
+        });
+    </script>
+</body>
+</html>

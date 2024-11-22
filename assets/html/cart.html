@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - OneClicPick</title>
+    <style>
+        :root {
+
+
+
+            --spanish-gray: hsl(0, 0%, 60%);
+            --sonic-silver: hsl(0, 0%, 47%);
+            --eerie-black: hsl(0, 0%, 13%);
+            --salmon-pink: hsl(202, 86%, 75%);
+            --sandy-brown: hsl(29, 90%, 65%);
+            --bittersweet: hsl(202, 86%, 75%);
+            --ocean-green:hsl(202, 29%, 50%) ;
+            --davys-gray: hsl(0, 0%, 33%);
+            --cultured: hsl(0, 0%, 93%);
+            --white: hsl(0, 100%, 100%);
+            --onyx: hsl(0, 0%, 27%);
+          
+        }          
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cultured);
+            color: var(--eerie-black);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: var(--ocean-green);
+            padding: 20px;
+            text-align: center;
+            color: var(--white);
+        }
+        .cart-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--white);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .cart-item-details h3 {
+            margin: 0;
+            color: var(--onyx);
+        }
+        .cart-item-details p {
+            color: var(--sonic-silver);
+        }
+        .total {
+            text-align: right;
+            font-size: 18px;
+            margin-top: 30px;
+            color: var(--onyx);
+        }
+        .checkout-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--bittersweet);
+            color: var(--white);
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>OneClicPick - Cart</h1>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-item">
+            <img src="item.jpg" alt="Product Image">
+            <div class="cart-item-details">
+                <h3>Product Name</h3>
+                <p>Short description of the product</p>
+            </div>
+            <div class="cart-item-price">
+                <p>$100</p>
+            </div>
+        </div>
+        <div class="total">
+            <p>Total: $100</p>
+        </div>
+        <a href="payment.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+
+    <script>
+        // JavaScript functions can be added here, such as for calculating total
+    </script>
+</body>
+</html>

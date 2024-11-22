@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin E-commerce</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product Management</h1>
+    <form id="productForm">
+      <div class="form-group">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" placeholder="Enter product name" required>
+      </div>
+      <div class="form-group">
+        <label for="productDetails">Product Details:</label>
+        <textarea id="productDetails" placeholder="Enter product details" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="costPrice">Cost Price:</label>
+        <input type="number" id="costPrice" placeholder="Enter cost price" required>
+      </div>
+      <div class="form-group">
+        <label for="customerPrice">Customer Price:</label>
+        <input type="number" id="customerPrice" placeholder="Enter customer price" required>
+      </div>
+      <div class="form-group">
+        <label for="discountPrice">Discount Price (optional):</label>
+        <input type="number" id="discountPrice" placeholder="Enter discount price">
+      </div>
+      <div class="form-group">
+        <label for="productImage">Image URL:</label>
+        <input type="url" id="productImage" placeholder="Enter image URL" required>
+      </div>
+      <div class="form-group">
+        <label for="productType">Product Type:</label>
+        <select id="productType" required>
+          <option value="" disabled selected>Select product type</option>
+          <option value="Shirt">Shirt</option>
+          <option value="Shorts">Shorts & Jeans</option>
+          <option value="SafetyShoes">Safety Shoes</option>
+          <option value="Formal">Formal</option>
+          <option value="Casual">Casual</option>
+          <option value="Dress">Dress & Frock</option>
+          <option value="ClothesPerfume">Clothes Perfume</option>
+          <option value="Deodorant">Deodorant</option>
+          <option value="FlowerFragrance">Flower Fragrance</option>
+          <option value="AirFreshener">Air Freshener</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="productQuantity">Product Quantity:</label>
+        <input type="number" id="productQuantity" placeholder="Enter product quantity" required>
+      </div>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Product Tables</h2>
+    <div id="tablesContainer">
+      <!-- Tables will be dynamically generated here -->
+    </div>
+  </div>
+  <script src="../js/admin.js"></script>
+</body>
+</html>
